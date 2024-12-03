@@ -73,6 +73,7 @@
   margin: 1rem auto;
   position: relative;
   padding: 0;
+  transition: .5s;
  }
 
  .link__projeto {
@@ -104,10 +105,16 @@
 
 }
 
-.link__projeto:hover {
+.card__projeto:hover {
   transform: scale(1.1, 1.1);
   transition: .5s;
   cursor: pointer;
+}
+.card__projeto:hover > .descricao__projeto > h3 {
+  transition: .5s;
+  cursor: pointer;
+  color: hsl(36, 56%, 63%);
+  text-shadow: 1px 1px 20px rgba(99, 76, 1, 0.829);
 }
 
  .descricao__projeto {
@@ -121,6 +128,7 @@
     font-size: 1.3rem;
     color: #9e9e9ed0;
     text-shadow: 1px 1px 6px #63636385;
+    transition: .5s;
   }
  }
 

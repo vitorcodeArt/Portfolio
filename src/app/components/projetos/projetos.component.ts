@@ -22,15 +22,15 @@ export class ProjetosComponent implements AfterViewInit {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.from(".conteiner__projetos", {
-      x:-300,
-      duration: 2,
+      x:-200,
+      duration: 1,
       opacity: 0,
       scrollTrigger: ".conteiner__projetos"
     })
 
     this.listaItens.forEach((item, index) => {
       gsap.from(item.nativeElement, {
-        duration: 1,
+        duration: .5,
         opacity: 0,
         y: -50,
         delay: index * .2, // Atraso progressivo para cada <li>

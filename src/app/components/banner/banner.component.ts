@@ -38,7 +38,7 @@ export class BannerComponent implements AfterViewInit {
         textShadow: "1px 1px 20px rgba(143, 81, 1, 0.842)",
         ease: "bounce.in",
         opacity: 1,
-      }, "+=2")
+      }, "+=1")
       .to(this.linguagem.nativeElement, {
         duration: .5,
         color: "hsl(29, 65%, 69%)",
@@ -52,7 +52,7 @@ export class BannerComponent implements AfterViewInit {
         textShadow: "-2px -2px 10px rgba(0, 0, 0, 0.842)",
         ease: "bounce.in",
         opacity: .2,
-      }, "+=1")
+      }, "+=.5")
       .to(this.text3.nativeElement, {
         duration: .8,
         color: "hsl(29, 65%, 69%)",
