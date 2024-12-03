@@ -1,0 +1,29 @@
+<div class="row conteiner_menu">
+  <ul class="col-xs-6 col-sm-6 col-lg-6 link__nav">
+    <li>
+      <a
+        #listaItem (click)="scrollTo('home')"
+        [class.linkSelecionado]="currentSection === 'home'"
+        class="item">HOME</a>
+    </li>
+    <li>
+      <a
+        #listaItem (click)="scrollTo('projetos')"
+        [class.linkSelecionado]="currentSection === 'projetos'"
+        class="item">PROJETOS</a>
+    </li>
+    <li>
+      <a
+        #listaItem (click)="scrollTo('contato')"
+        [class.linkSelecionado]="currentSection === 'contato'"
+        class="item">CONTATO</a>
+    </li>
+  </ul>
+  <!-- <ul class="col-xs-6 col-sm-6 col-lg-6 redes">
+    <li class="item"><i class="bi bi-instagram" style="color:aliceblue"></i></li>
+    <li class="item"><i class="bi bi-telephone"></i></li>
+  </ul> -->
+</div>
+
+
+

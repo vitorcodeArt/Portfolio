@@ -1,0 +1,162 @@
+.banner {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .informacao {
+    display: block;
+  }
+
+}
+
+.content__nome {
+  font-size: clamp(3rem, 7vw, 8vw);
+  color: hsl(0, 0%, 9%);
+  text-shadow: -2px -2px 10px rgba(0, 0, 0, 0.842);
+  opacity: 0.2;
+  font-family: "GTProelium";
+
+}
+
+.content__linguagem {
+  font-size: clamp(1.5rem, 3vw, 4vw);
+  color: hsl(0, 0%, 9%);
+  text-shadow: -2px -2px 10px rgba(0, 0, 0, 0.842);
+  opacity: 0.2;
+  font-family: "GTProelium";
+}
+.content__linguagem #text3{
+  font-size: clamp(1.5rem, 3vw, 4vw);
+  color: hsl(0, 0%, 9%);
+  text-shadow: -2px -2px 10px rgba(0, 0, 0, 0.842);
+  opacity: 0.2;
+}
+
+.content__linguagem::after {
+  content: '';
+  height: 1px;
+  width: 20%;
+  background: #ececec2c;
+  display: block;
+  margin: 1rem 0;
+}
+
+.content__office {
+  font-family: "Kinta";
+  font-size: 1.3rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  height: 100%;
+}
+
+.sobreMim {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  margin-bottom: 1rem;
+  opacity: 0.3;
+  object-fit: cover;
+  transition: .5s;
+  margin-bottom: 2.5rem;
+  transform: translate3d(0,-100px,0);
+}
+img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: .5s;
+  filter: drop-shadow(7px 12px 15px #ce9a38ad);
+}
+img:hover + .sobreMim > h2 {
+  color: rgb(227, 174, 125);
+  text-shadow: -2px -2px 10px rgb(138, 138, 138);
+  opacity: 1;
+  transition: .5s ease-in-out;
+}
+img:hover + .sobreMim > p {
+  color: rgba(165, 165, 165, 0.863);
+  text-shadow: -2px -2px 10px rgb(138, 138, 138);
+  opacity: .1;
+  transition: 1s ease-in-out;
+}
+
+.sobreMim h2 {
+  font-size: clamp(.8rem, 1.4rem, 1.7rem);
+  color: hsl(0, 0%, 9%);
+  text-shadow: -2px -2px 10px rgba(0, 0, 0, 0.842);
+  opacity: .5;
+  transition: 1s;
+  margin-bottom: 1rem;
+}
+
+.sobreMim p {
+  font-size: clamp(.5rem, 1.1rem, 1.3rem);
+  color: hsl(0, 0%, 9%);
+  text-shadow: -2px -2px 10px rgba(0, 0, 0, 0.842);
+  opacity: .5;
+  transition: .5s;
+  font-family: "Kinta", sans-serif;
+}
+
+@media (max-width: 992px) {
+  .hide-element {
+    display: none;
+  }
+
+  .banner {
+    margin-top: 92px;
+    display: block;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    height: 30%;
+    margin-top: 3.5rem;
+    display: block;
+  }
+
+
+  .informacao {
+    padding-left: 2rem;
+  }
+
+  .content__nome {
+    font-size: clamp(4rem, 8vw, 9vw);
+    color: hsl(0, 0%, 9%);
+    text-shadow: -2px -2px 10px rgba(0, 0, 0, 0.842);
+    opacity: 0.2;
+    font-family: "GTProelium";
+
+  }
+  .content__linguagem {
+    font-size: clamp(2rem, 4vw, 5vw);
+    color: hsl(0, 0%, 9%);
+    text-shadow: -2px -2px 10px rgba(0, 0, 0, 0.842);
+    opacity: 0.2;
+    font-family: "GTProelium";
+  }
+  .content__linguagem #text3{
+    font-size: clamp(2rem, 4vw, 5vw);
+    color: hsl(0, 0%, 9%);
+    text-shadow: -2px -2px 10px rgba(0, 0, 0, 0.842);
+    opacity: 0.2;
+  }
+}

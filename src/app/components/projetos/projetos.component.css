@@ -1,0 +1,225 @@
+/* .html5, .java{
+  color: hsl(0, 65%, 69%);
+  text-shadow: 1px 1px 20px rgba(143, 1, 1, 0.842);
+}
+
+
+.css3 {
+  color: hsl(212, 65%, 69%);
+  text-shadow: 1px 1px 20px rgba(1, 91, 143, 0.842);
+}
+.ts, .py {
+  color: hsl(212, 71%, 61%);
+  text-shadow: 1px 1px 20px rgba(69, 66, 236, 0.842);
+}
+
+.js, .json {
+  color: hsl(36, 65%, 69%);
+  text-shadow: 1px 1px 20px rgba(143, 110, 1, 0.842);
+}
+.postgre {
+  color: hsl(184, 27%, 77%);
+  text-shadow: 1px 1px 20px rgba(1, 143, 143, 0.842);
+}
+.bootstrap {
+  color: hsl(288, 64%, 38%);
+  text-shadow: 1px 1px 20px rgba(194, 60, 235, 0.842);
+}
+.node {
+  color: hsl(125, 58%, 31%);
+  text-shadow: 1px 1px 20px rgba(7, 173, 57, 0.842);
+} */
+
+* {
+  list-style: none;
+}
+
+.conteiner__projetos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 2rem;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+
+  h2 {
+    font-family: 'GTProelium', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: hsl(0, 0%, 83%);
+    text-shadow: 1px 1px 20px rgba(143, 143, 143, 0.842);
+  }
+}
+
+.projeto {
+  width: 30rem;
+  height: 100%;
+  position: relative;
+  }
+
+ img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+ }
+
+ .card__projeto {
+  height: 23rem;
+  width: 23rem;
+  margin: 1rem auto;
+  position: relative;
+  padding: 0;
+ }
+
+ .link__projeto {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #121212;
+  position: relative;
+  box-shadow: 1px 1px 10px #000;
+  transition: .5s;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: -4px 4px 8px rgba(5, 5, 5, 0.788);
+  }
+
+
+  .link__item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+  }
+
+}
+
+.link__projeto:hover {
+  transform: scale(1.1, 1.1);
+  transition: .5s;
+  cursor: pointer;
+}
+
+ .descricao__projeto {
+  color: rgb(216, 87, 87);
+  background: rgb(94 94 94 / 23%);
+  padding: 0;
+  height: 20%;
+
+  h3 {
+    padding: .5rem;
+    font-size: 1.3rem;
+    color: #9e9e9ed0;
+    text-shadow: 1px 1px 6px #63636385;
+  }
+ }
+
+ .content__habilidades {
+  height: 100%;
+  border-radius: 5%;
+  padding: 1rem;
+ }
+
+ .link_botoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  li {
+    padding: 0 .5rem;
+    text-shadow: -4px 2px 8px #000;
+    transition: .5s;
+  }
+
+  li:hover {
+    padding: 0 .5rem;
+    text-shadow: -3px 2px 8px #a8784a;
+    transition: .5s;
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+ }
+
+ .listaItens {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 2px 2px 10px #55545465;
+ }
+
+ .habilidade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f2f4f6;
+  border-radius: 16px;
+  width: 5rem;
+  height: 5rem;
+  justify-content: center;
+  transition: .2s;
+  gap: 1rem;
+  box-shadow: 1px 1px 8px #a8774a63;
+  background: #6d6d6d1c;
+  text-shadow: 1px 1px 20px rgba(143, 81, 1, 0.842);
+  color: hsl(29, 65%, 69%);
+}
+
+li.habilidade:hover {
+  transform: scale(1.1, 1.1) !important;
+  box-shadow: 1px 1px 8px #a8774a63;
+  text-shadow: 1px 1px 20px rgba(143, 81, 1, 0.842);
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+  transition: .2s;
+}
+
+ .habilidade li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.habilidade i {
+  font-size: 3rem;
+}
+
+.hab__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 10px #55545465;
+
+}
+
+.hab__content i {
+  color: hsl(29, 65%, 69%);
+  text-shadow: 1px 1px 20px rgba(143, 81, 1, 0.842);
+}
+
+@media (max-width: 992px) {
+
+}
