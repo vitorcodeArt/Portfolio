@@ -65,11 +65,7 @@ export class BannerComponent implements AfterViewInit {
         x: -100,
         opacity: 0,
       }, "-=4")
-      tl.fromTo(this.title.nativeElement, {
-        y: -100,
-        opacity: 0.3
-      },
-        {
+      tl.to(this.title.nativeElement, {
         y: 0,
         duration: 1,
         color: "hsl(29, 65%, 69%)",
@@ -77,11 +73,7 @@ export class BannerComponent implements AfterViewInit {
         ease: "bounce.in",
         opacity: 0.9,
       }, "-=3")
-      tl.fromTo(this.sobreMim.nativeElement, {
-        y: -100,
-        opacity: 0.3
-      },
-      {
+      tl.to(this.sobreMim.nativeElement, {
         y: 0,
         duration: 1,
         color: "rgb(211 205 205 / 97%)",
