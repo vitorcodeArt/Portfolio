@@ -19,7 +19,7 @@ export class ContatoComponent implements AfterViewInit {
     const tl = gsap.timeline()
 
     tl.to(".title", {
-        duration: 1,
+        duration: .5,
         color: "hsl(29, 65%, 69%)",
         textShadow: "1px 1px 20px rgba(143, 81, 1, 0.842)",
         ease: "bounce.in",
@@ -29,7 +29,7 @@ export class ContatoComponent implements AfterViewInit {
 
     this.listaItens.forEach((item, index) => {
       tl.to(item.nativeElement, {
-        duration: 1,
+        duration: .5,
         opacity: 1,
         delay: index * .5, // Atraso progressivo para cada <li>
         scrollTrigger: ".copyright",

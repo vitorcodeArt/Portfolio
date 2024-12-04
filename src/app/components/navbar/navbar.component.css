@@ -67,4 +67,10 @@ a.linkSelecionado {
   }
 }
 
+@media (max-width: 600px) {
+  .conteiner_menu{
+    box-sizing: content-box;
+  }
+
+}
 
